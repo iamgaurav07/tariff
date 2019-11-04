@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-center">
+        <a class="navbar-brand" href="/">Tariff Details</a>
+</nav>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12 row mb-3">
+            <div class="col-8 col-sm-10 col-md-10 col-lg-10"></div>
+            <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+                    <div class="dropdown" >
+                            <span>Sort By <i class="fa fa-caret-down"></i></span>
+            
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" (click)="sortByCompany()" href="javascript:void(0)">Company</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" (click)="sortBySpeed()" href="javascript:void(0)" >Speed</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" (click)="sortByPrice()" href="javascript:void(0)">Price</a>
+                            </div>
+                        </div>
+            </div>
+            
+        </div>
+        <div class="table-responsive table-striped">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"><a (click)="sortByCompany()">Company</a></th>
+                        <th scope="col">Download/Upload Speed</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of tariffList; let i=index">
+                        <th scope="row">{{ i+1 }}</th>
+                        <td>{{ data.company | titlecase }}</td>
+                        <td>{{ data.speed }} Mbps</td>
+                        <td>{{ data.price | currency: '€' }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
