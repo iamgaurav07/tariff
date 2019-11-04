@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
-# Before start project must run
+## Before start project
 Run 'npm install' for node-module or node packages.
 
 ## Development server
