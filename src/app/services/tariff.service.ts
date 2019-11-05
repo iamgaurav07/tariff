@@ -15,7 +15,7 @@ export class TariffService {
       {company: 'idea', speed: 32, downspeed: 22, tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'], price: 30.99},
       {company: 'relience', speed: 56, downspeed: 52,  tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'],price: 32.99},
       {company: 'hutch', speed: 100, downspeed: 12,  tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'],price: 12.99},
-      {company: 'tata docomo', speed: 22, downspeed: 82, tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'], price: 38.99},
+      {company: 'docomo', speed: 22, downspeed: 82, tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'], price: 38.99},
       {company: 'aircel', speed: 48, downspeed: 32, tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'], price: 98.99},
       {company: 'spice', speed: 12, downspeed: 53, tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'], price: 12.99},
       {company: 'comfort allnet', speed: 150, downspeed: 2, tariff: [ 'a tariff: 1','b tariff: 2','c tariff: 3'], price: 76.99},
