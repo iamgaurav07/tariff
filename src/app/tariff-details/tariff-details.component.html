@@ -22,20 +22,10 @@
         </div>
         <div class="table-responsive">
             <table class="table table-tariff">
-                <!-- <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col"><a (click)="sortByCompany()">Company</a></th>
-                        <th scope="col">Download/Upload Speed</th>
-                        <th scope="col">Price</th>
-                    </tr>
-                </thead> -->
                 <tbody>
                     <tr *ngFor="let data of tariffList; let i=index">
                         <td scope="row">{{ i+1 }}</td>
                         <td>{{ data.company | titlecase }}</td>
-                        <!-- <td>{{ data.speed }} Mbps</td>
-                        <td>{{ data.price | currency: '€' }}</td> -->
                         <td>
                             <div class="download_link"><i class="fa fa-caret-down"></i> {{ data.speed }} Mbps</div> <br>
                             <div class="upload_link"><i class="fa fa-caret-up"></i> {{ data.downspeed }} Mbps</div>
